@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The DOM</title>
+</head>
+<body>
+  <header id="header">
+    <nav id="nav">
+      <ul id="nav-list">
+        <li id="item-one"><a href="#" id="link-one">Link 1</a></li>
+        <li id="item-two"><a href="#" id="link-two">Link 2</a></li>
+        <li id="item-three"><a href="#" id="link-three">Link 3</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <script>
+    const header = document.querySelector('#header');
+    const nav = header.childNodes[1];
+    const list = nav.childNodes[1];
+    const firstListItem = list.childNodes[1];
+    const firstLink = firstListItem.childNodes[0]
+    console.log(firstLink)
+  </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create A Flower Delivery Service</title>
+</head>
+<body>
+  <form action="">
+    <!-- contact section -->
+    <div>
+      <!-- recipient details -->
+      <div>
+        <h2>Recipient Details</h2>
+        <label for="recipient-name">Full name</label>
+        <br>
+        <input type="text" id='recipient-name'>
+
+        <br>
+        <label for="recipient-telephone">Telephone Number</label>
+        <br>
+        <input type="tel" id="recipient-telephone" />
+
+        <br>
+        <label for="recipient-address">Address</label>
+        <br>
+        <input type="text" id="recipient-address">
+      </div>
+      <!-- sender details -->
+      <div>
+        <label for="sender-name">Full Name</label> 
+        <br>
+        <input type="text" id='sender-name'> 
+        <br>
+
+        <label for="sender-email">Email Address</label> 
+        <br>
+        <input type="email" id='sender-email'> 
+        <br>
+
+      </div>
+    </div>
+    <!-- order section -->
+    <div>
+      <h2>Order</h2>
+      <label for="bouquet-select">Bouquet Type</label>
+      <br>
+      <select name="bouquet-type" id="bouquet-select">
+        <option value="basic">Basic Bouquet - $24.99</option>
+        <option value="premium">Premium Bouquet - $49.99</option>
+        <option value="premium-plus">Premium Bouquet + Chocolate - $69.99</option>
+      </select>
+      
+      <br>
+      <label for="message-textarea">Message</label> 
+      <br>
+      <textarea name="message" id="message-textarea" cols="30" rows="10"></textarea>
+
+      <br>
+      <button type="submit">Checkout</button>
+    </div>
+  </form>
+</body>
+</html>
