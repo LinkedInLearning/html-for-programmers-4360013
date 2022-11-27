@@ -21,43 +21,44 @@
 
     const socials = [
         {
-          name: 'Brandon West',
-          city: 'Istanbul',
-          country: 'Turkey',
-          avatar: 'https://randomuser.me/api/portraits/thumb/men/35.jpg'
+          name: 'Mai Sarabia',
+          city: 'Berlin',
+          country: 'Germany',
+          avatar: '../assets/avatar-1.png'
         },
         {
-          name: 'Tarik Hanson',
+          name: 'Elsa Johansson',
           city: 'Oslo',
           country: 'Norway',
-          avatar: 'https://randomuser.me/api/portraits/thumb/men/24.jpg'
+          avatar: '../assets/avatar-2.png'
         },
         {
-          name: 'Chelsea Rich',
+          name: 'Shonda Green',
           city: 'San Francisco',
           country: 'USA',
-          avatar: 'https://randomuser.me/api/portraits/thumb/women/23.jpg'
+          avatar: '../assets/avatar-3.png'
         },
         {
-          name: 'Petra Olsson',
-          city: 'Stockholm',
-          country: 'Sweden',
-          avatar: 'https://randomuser.me/api/portraits/thumb/women/14.jpg'
+          name: 'Daniel Nagy',
+          city: 'Budapest',
+          country: 'Hungary',
+          avatar: '../assets/avatar-4.png'
         }
       ];
 
     socials.forEach(user => {
-      // Generate nodes
       let socialWrapper = document.createElement('div');
       socialWrapper.style = 'border: 1px solid black';
       let avatar = document.createElement('img');
       avatar.src = user.avatar;
       avatar.alt = user.name;
 
+      // Name
       let name = document.createElement('h3');
       name.innerText = user.name;
       socialWrapper.appendChild(name);
 
+      // Location
       let location = document.createElement('p');
       location.innerText = user.country;
 
@@ -68,12 +69,10 @@
       location.prepend(city);
       socialWrapper.appendChild(location);
 
-
+      // Add friend button
       let addFriendButton = document.createElement('button');
       addFriendButton.innerText = 'Add Friend';
       socialWrapper.append(addFriendButton);
-
-
 
       socialWrapper.appendChild(avatar);
       wrapper.appendChild(socialWrapper);
