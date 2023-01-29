@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dynamically Generate HTML Elements With JavaScript</title>
 </head>
+
 <body>
   <!-- Generate this for each node
   <div>
@@ -17,67 +19,65 @@
   <div class="wrapper"></div>
 
   <script>
-    const wrapper = document.querySelector('.wrapper');
-
     const socials = [
-        {
-          name: 'Mai Sarabia',
-          city: 'Berlin',
-          country: 'Germany',
-          avatar: '../assets/avatar-1.png'
-        },
-        {
-          name: 'Elsa Johansson',
-          city: 'Oslo',
-          country: 'Norway',
-          avatar: '../assets/avatar-2.png'
-        },
-        {
-          name: 'Shonda Green',
-          city: 'San Francisco',
-          country: 'USA',
-          avatar: '../assets/avatar-3.png'
-        },
-        {
-          name: 'Daniel Nagy',
-          city: 'Budapest',
-          country: 'Hungary',
-          avatar: '../assets/avatar-4.png'
-        }
-      ];
+      {
+        name: 'Mai Sarabia',
+        city: 'Berlin',
+        country: 'Germany',
+        avatar: '../assets/avatar-1.png'
+      },
+      {
+        name: 'Elsa Johansson',
+        city: 'Oslo',
+        country: 'Norway',
+        avatar: '../assets/avatar-2.png'
+      },
+      {
+        name: 'Shonda Green',
+        city: 'San Francisco',
+        country: 'USA',
+        avatar: '../assets/avatar-3.png'
+      },
+      {
+        name: 'Daniel Nagy',
+        city: 'Budapest',
+        country: 'Hungary',
+        avatar: '../assets/avatar-4.png'
+      }
+    ];
 
+    const wrapper = document.querySelector('.wrapper');
     socials.forEach(user => {
       let socialWrapper = document.createElement('div');
       socialWrapper.style = 'border: 1px solid black';
+
       let avatar = document.createElement('img');
       avatar.src = user.avatar;
       avatar.alt = user.name;
+      socialWrapper.appendChild(avatar);
 
-      // Name
       let name = document.createElement('h3');
       name.innerText = user.name;
       socialWrapper.appendChild(name);
 
-      // Location
       let location = document.createElement('p');
       location.innerText = user.country;
 
       let city = document.createElement('a');
       city.src = '#';
-      city.appendChild(document.createTextNode(`${user.city}, `))
+      city.appendChild(document.createTextNode(`${user.city}, `));
 
       location.prepend(city);
       socialWrapper.appendChild(location);
 
-      // Add friend button
       let addFriendButton = document.createElement('button');
       addFriendButton.innerText = 'Add Friend';
       socialWrapper.append(addFriendButton);
 
-      socialWrapper.appendChild(avatar);
-      wrapper.appendChild(socialWrapper);
-    });
 
+      wrapper.appendChild(socialWrapper);
+    })
   </script>
 </body>
+
 </html>
