@@ -1,34 +1,20 @@
 # HTML for Programmers
 This is the repository for the LinkedIn Learning course HTML for Programmers. The full course is available from [LinkedIn Learning][lil-course-url].
 
-_See the readme file in the main branch for updated instructions and information._
-## Instructions
-This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
+![HTML for Programmers][lil-thumbnail-url] 
 
-## Branches
-The branches are structured to correspond to the videos in the course. The naming convention is `CHAPTER#_MOVIE#`. As an example, the branch named `02_03` corresponds to the second chapter and the third video in that chapter. 
-Some branches will have a beginning and an end state. These are marked with the letters `b` for "beginning" and `e` for "end". The `b` branch contains the code as it is at the beginning of the movie. The `e` branch contains the code as it is at the end of the movie. The `main` branch holds the final state of the code when in the course.
-
-When switching from one exercise files branch to the next after making changes to the files, you may get a message like this:
-
-    error: Your local changes to the following files would be overwritten by checkout:        [files]
-    Please commit your changes or stash them before you switch branches.
-    Aborting
-
-To resolve this issue:
-	
-    Add changes to git using this command: git add .
-	Commit changes using this command: git commit -m "some message"
-
-## Installing
-1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
-2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. [Course-specific instructions]
+It’s not surprising that HTML gets overlooked by modern programmers. Programmers often find that HTML is not much like their familiar programming language turf, but having a better understanding of this foundational web technology can enhance your skills as a web developer and allow you to create more robust web applications. In this course, Emma Bostian highlights the practical skills programmers should know about HTML—the anatomy of an HTML element, the difference between blocks and inline elements, and how to properly nest HTML elements. This course is not meant to be a complete overview of HTML—you won’t learn about every individual HTML tag—but instead a comprehensive overview of semantic HTML, showing you how to architect an accessible web page. Join Emma in this course for some hands-on experience with this essential web development language.
 
 
-[0]: # (Replace these placeholder URLs with actual course URLs)
+### Instructor
 
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: http://
+Emma Bostian 
+                            
+Software Engineer
 
+                            
+
+Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/emma-bostian).
+
+[lil-course-url]: https://www.linkedin.com/learning/html-for-programmers?dApp=59033956
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/C560DAQHKNJ3LBCSNYg/learning-public-crop_675_1200/0/1679683700880?e=2147483647&v=beta&t=emOK6Xsxz5R7qgdsfJlj3-zatW-yzR7NynCHzCjTE7I
