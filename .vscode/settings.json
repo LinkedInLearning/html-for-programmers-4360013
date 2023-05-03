@@ -3,7 +3,7 @@
   "editor.cursorBlinking": "solid",
   "editor.fontFamily": "ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono', 'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace",
   "editor.fontLigatures": false,
-  "editor.fontSize": 22,
+  "editor.fontSize": 12,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.lineNumbers": "on",
@@ -25,5 +25,5 @@
   "prettier.enable": true,
   "eslint.alwaysShowStatus": false,
   "liveServer.settings.donotVerifyTags": true,
-  "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5502
 }
